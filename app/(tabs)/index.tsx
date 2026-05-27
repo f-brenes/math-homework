@@ -13,6 +13,7 @@ import { Colors, Spacing, Radius, FontSize } from '../../constants/theme';
 import { recentProblems, dashboardStats } from '../../constants/placeholderData';
 import SectionHeader from '../../components/SectionHeader';
 import EquationCard from '../../components/EquationCard';
+import PhotoUploadWidget from '../../components/PhotoUploadWidget';
 
 const statItems = [
   { label: 'Solved Today', value: dashboardStats.solvedToday, icon: 'checkmark-circle', color: Colors.accentGreen },
@@ -70,6 +71,11 @@ export default function DashboardScreen() {
           <Text style={styles.solverHint}>
             Supports: ax + b = c · ax + b = cx + d · with fractions & parentheses
           </Text>
+        </View>
+
+        {/* Photo Upload Widget */}
+        <View style={styles.section}>
+          <PhotoUploadWidget />
         </View>
 
         {/* Stats Row */}
