@@ -25,7 +25,9 @@
     },
     "web": {
       "bundler": "metro",
-      "favicon": "./assets/favicon.png"
+      "output": "static",
+      "favicon": "./assets/favicon.png",
+      "baseUrl": "/math-homework"
     },
     "plugins": [
       "expo-router",
